@@ -13808,7 +13808,8 @@ if (missingRequiredArg) {
 }
 (0, logger_1.setVerbose)(commander_plus_1.default.verbose);
 //read the workspaces from the package.json
-const workspaces = require(commander_plus_1.default.folder + '/package.json').workspaces.packages;
+//const workspaces = require(program.folder+'/package.json').workspaces.packages;
+const workspaces = require(commander_plus_1.default.folder + '/package.json').workspaces;
 //display the workspaces
 console.log(chalk_1.default.green('## WORKSPADCES: ' + JSON.stringify(workspaces)));
 function findSubfolders(folderPath) {

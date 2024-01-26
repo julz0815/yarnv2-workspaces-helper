@@ -29,7 +29,8 @@ setVerbose(program.verbose)
 
 
 //read the workspaces from the package.json
-const workspaces = require(program.folder+'/package.json').workspaces.packages;
+//const workspaces = require(program.folder+'/package.json').workspaces.packages;
+const workspaces = require(program.folder+'/package.json').workspaces;
 
 //display the workspaces
 console.log(chalk.green('## WORKSPADCES: '+JSON.stringify(workspaces)))
